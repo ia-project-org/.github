@@ -95,10 +95,7 @@ flowchart TD
     EligibilityModel[Eligibility Model 📊]
     RecommendationModel[Recommendation Model 🤖]
 
-    subgraph CICD[CI/CD & Qualité du Code 🚀]
-        Jenkins[Jenkins ⚙️]
-        SonarQube[SonarQube 🧹]
-    end
+  
 
     Keycloak --> ReactClient
     ReactClient --> APIGateway
@@ -113,13 +110,6 @@ flowchart TD
     Eureka --> BankMS
     Eureka --> APIGateway
     Config --> Eureka
-
-    CICD --> Jenkins
-    CICD --> SonarQube
-    Jenkins --> APIGateway
-    SonarQube --> EligibilityMS
-    SonarQube --> BankMS
-
 ```
 
 ## 🚀 Installation et Démarrage
